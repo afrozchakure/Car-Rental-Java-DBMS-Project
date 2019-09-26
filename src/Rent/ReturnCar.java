@@ -25,6 +25,7 @@ public class ReturnCar extends javax.swing.JFrame {
      */
     public ReturnCar() {
         initComponents();
+        table_update();
     }
     
     Connection con;
@@ -67,7 +68,7 @@ public class ReturnCar extends javax.swing.JFrame {
                     v2.add(Rs.getString("custid"));
                     v2.add(Rs.getString("carid"));
                     v2.add(Rs.getString("return_date"));
-                    v2.add(Rs.getString("elp"));   
+                    v2.add(Rs.getString("elap"));   
                     v2.add(Rs.getString("fine"));   
                 }
                 
