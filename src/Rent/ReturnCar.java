@@ -368,6 +368,18 @@ public class ReturnCar extends javax.swing.JFrame {
             
             JOptionPane.showMessageDialog(this, "Car Record Updated");
             
+            jTextField1.setText(""); 
+            jLabel7.setText("");
+            jLabel8.setText("");
+            jLabel9.setText("");
+            jLabel10.setText("");
+             
+             
+//             jComboBox1.setSelectedIndex(-1);  // Clearing the value in jCB
+//             jTextField2.requestFocus();  // Changing Focus
+
+            table_update();
+            
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(ReturnCar.class.getName()).log(Level.SEVERE, null, ex);
         }

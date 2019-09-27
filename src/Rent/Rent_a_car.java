@@ -20,12 +20,12 @@ import javax.swing.JOptionPane;
  *
  * @author afroz
  */
-public class Rental extends javax.swing.JFrame {
+public class Rent_a_car extends javax.swing.JFrame {
 
     /**
      * Creates new form Rental
      */
-    public Rental() {
+    public Rent_a_car() {
         initComponents();
         
         LoadCarid();
@@ -68,7 +68,7 @@ public class Rental extends javax.swing.JFrame {
         } 
         
         catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(Rental.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Rent_a_car.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
@@ -302,7 +302,7 @@ public class Rental extends javax.swing.JFrame {
             
             
         } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(Rental.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Rent_a_car.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
@@ -335,7 +335,7 @@ public class Rental extends javax.swing.JFrame {
             } 
             
             catch (ClassNotFoundException | SQLException ex) {
-                Logger.getLogger(Rental.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Rent_a_car.class.getName()).log(Level.SEVERE, null, ex);
             }
             
             
@@ -375,9 +375,24 @@ public class Rental extends javax.swing.JFrame {
             
             JOptionPane.showMessageDialog(this, "Success");
             
+            
+            jTextField1.setText("");
+            jLabel8.setText("");
+            jLabel9.setText("");
+            jTextField1.setText("");
+            jTextField3.setText("");
+            jDateChooser1.cleanup();
+            jDateChooser2.cleanup();
+            jComboBox1.setSelectedIndex(-1);  // Clearing the value in jCB
+//            jDateChooser2.setText("");
+            
+//            jTextField1.setText("");
+            
+            
+            
         } 
         catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(Rental.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Rent_a_car.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
@@ -402,20 +417,21 @@ public class Rental extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Rental.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Rent_a_car.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Rental.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Rent_a_car.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Rental.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Rent_a_car.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Rental.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Rent_a_car.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Rental().setVisible(true);
+                new Rent_a_car().setVisible(true);
             }
         });
     }
