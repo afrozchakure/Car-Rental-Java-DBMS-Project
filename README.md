@@ -9,9 +9,11 @@ The name of the database is "rentcar"
 The tables included in the MySQL database include:
 1. carregistration.
 2. customer.
-3. Rental.
+3. rental.
+4. login.
+5. returncar.
 
-"carregistration" table includes :-
+1. "carregistration" table includes :-
 
 | Field     | Type         | Null | Key | Default | Extra          |
 |-----------|--------------|------|-----|---------|----------------|
@@ -22,7 +24,7 @@ The tables included in the MySQL database include:
 | available | varchar(255) | YES  |     | NULL    |                |
 
 
-"customer" table includes :-
+2. "customer" table includes :-
 
 | Field   | Type         | Null | Key | Default | Extra          |
 |---------|--------------|------|-----|---------|----------------|
@@ -33,7 +35,7 @@ The tables included in the MySQL database include:
 | mobile  | int(13)      | YES  |     | NULL    |                |
 
 
-"rental" table includes :-
+3. "rental" table includes :-
 
 | Field   | Type         | Null | Key | Default | Extra          |
 |---------|--------------|------|-----|---------|----------------|
@@ -43,4 +45,23 @@ The tables included in the MySQL database include:
 | fee     | int(11)      | YES  |     | NULL    |                |
 | date    | varchar(255) | YES  |     | NULL    |                |
 | due     | varchar(255) | YES  |     | NULL    |                |
+
+4. "login" table includes :-
+
+| Field    | Type         | Null | Key | Default | Extra          |
+|----------|--------------|------|-----|---------|----------------|
+| login_id | int(11)      | NO   | PRI | NULL    | auto_increment |
+| username | varchar(255) | YES  |     | NULL    |                |
+| password | varchar(255) | YES  |     | NULL    |                |
+
+5. "returncar" table includes :-
+
+| Field       | Type         | Null | Key | Default | Extra          |
+|-------------|--------------|------|-----|---------|----------------|
+| id          | int(10)      | NO   | PRI | NULL    | auto_increment |
+| carid       | varchar(255) | YES  |     | NULL    |                |
+| custid      | varchar(255) | YES  |     | NULL    |                |
+| return_date | varchar(255) | YES  |     | NULL    |                |
+| elap        | int(11)      | YES  |     | NULL    |                |
+| fine        | int(11)      | YES  |     | NULL    |                |
 
