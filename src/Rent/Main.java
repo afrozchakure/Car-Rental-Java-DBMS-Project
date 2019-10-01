@@ -140,9 +140,11 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        
         Start_Page m = new Start_Page();
         m.setVisible(true);
         dispose();
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**

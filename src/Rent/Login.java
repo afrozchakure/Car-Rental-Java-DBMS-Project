@@ -37,6 +37,7 @@ public class Login extends javax.swing.JFrame {
     
     Connection con;
     PreparedStatement pst;
+    PreparedStatement pst1;
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -164,18 +165,23 @@ public class Login extends javax.swing.JFrame {
             pst = (PreparedStatement) con.prepareStatement("SELECT * FROM login WHERE (username, password) = (?, ?)");
             pst.setString(1, usrname);
             pst.setString(2, pwd);
-            
             ResultSet rs = pst.executeQuery();
+            
+//            pst1 = (PreparedStatement) con.prepareStatement("UPDATE login set status = 'Login' WHERE (username, password) = (?, ?)");
+//            pst1.setString(1, usrname);
+//            pst1.setString(2, pwd);
+//            ResultSet rs1 = pst1.executeQuery();
             
             if(rs.next())
             {
                 String username = rs.getString("username");
                 String password = rs.getString("password");
                 
-                if(usrname.equals(username) && pwd.equals(pwd))
+                if(usrname.equals(username) && pwd.equals(password))
                 {
                     Main m = new Main();  // Creating an object of main
                     m.setVisible(true); 
+                    
                     dispose();  // To close the frame
                 }
             }

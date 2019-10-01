@@ -63,7 +63,7 @@ public class Rent_a_car extends javax.swing.JFrame {
             
             while(rs.next())
             {
-                jComboBox1.addItem(rs.getString(2));  // 2 is the id
+                jComboBox1.addItem(rs.getString(1));  // 1 is the car_no
             }
         } 
         
