@@ -7,14 +7,16 @@ Open the project in Netbeans IDE.
 The name of the database is "rentcar"
 
 The tables included in the MySQL database include:
-1. carregistration.
-2. customer.
-3. rental.
-4. login.
-5. returncar.
-
-1. "carregistration" table includes :-
-
+<ol>
+  <li>carregistration.</li>
+  <li>customer</li>
+  <li>rental</li>
+  <li>login</li>
+  <li>returncar</li>
+</ol>
+<ol>
+  <li>"carregistration" table includes :
+    
 | Field     | Type         | Null | Key | Default | Extra          |
 |-----------|--------------|------|-----|---------|----------------|
 | id        | int(10)      | NO   | PRI | NULL    | auto_increment |
@@ -22,9 +24,9 @@ The tables included in the MySQL database include:
 | make      | varchar(255) | YES  |     | NULL    |                |
 | model     | varchar(255) | YES  |     | NULL    |                |
 | available | varchar(255) | YES  |     | NULL    |                |
+</li>
 
-
-2. "customer" table includes :-
+<li>"customer" table includes :
 
 | Field   | Type         | Null | Key | Default | Extra          |
 |---------|--------------|------|-----|---------|----------------|
@@ -33,9 +35,9 @@ The tables included in the MySQL database include:
 | name    | varchar(255) | YES  |     | NULL    |                |
 | address | tinytext     | YES  |     | NULL    |                |
 | mobile  | int(13)      | YES  |     | NULL    |                |
+</li>
 
-
-3. "rental" table includes :-
+<li>"rental" table includes :
 
 | Field   | Type         | Null | Key | Default | Extra          |
 |---------|--------------|------|-----|---------|----------------|
@@ -45,16 +47,16 @@ The tables included in the MySQL database include:
 | fee     | int(11)      | YES  |     | NULL    |                |
 | date    | varchar(255) | YES  |     | NULL    |                |
 | due     | varchar(255) | YES  |     | NULL    |                |
-
-4. "login" table includes :-
+</li>
+<li>"login" table includes :
 
 | Field    | Type         | Null | Key | Default | Extra          |
 |----------|--------------|------|-----|---------|----------------|
 | login_id | int(11)      | NO   | PRI | NULL    | auto_increment |
 | username | varchar(255) | YES  |     | NULL    |                |
 | password | varchar(255) | YES  |     | NULL    |                |
-
-5. "returncar" table includes :-
+</li>
+<li>"returncar" table includes :
 
 | Field       | Type         | Null | Key | Default | Extra          |
 |-------------|--------------|------|-----|---------|----------------|
@@ -64,4 +66,4 @@ The tables included in the MySQL database include:
 | return_date | varchar(255) | YES  |     | NULL    |                |
 | elap        | int(11)      | YES  |     | NULL    |                |
 | fine        | int(11)      | YES  |     | NULL    |                |
-
+</li>
