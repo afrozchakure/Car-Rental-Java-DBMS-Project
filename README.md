@@ -2,7 +2,6 @@
 * This is a Car Rental App made in Netbeans using Java and Mysql
 * For using the project **fork the project** and **clone** it in your local repository.
 * Open the project in Netbeans IDE.
-* The name of the database is **"rentcar"**
 
 #### 1. Fork the Repository.
 
@@ -17,10 +16,11 @@
 2. customer.
 3. rental.
 4. login.
-5. returncar.
+5. returncar.  
 
+#### The name of the database is **"rentcar"** and the description of tables is given below : 
 
-1. "carregistration" table includes :
+##### 1. "carregistration" table includes :
     
 | Field     | Type         | Null | Key | Default | Extra          |
 |-----------|--------------|------|-----|---------|----------------|
@@ -30,7 +30,7 @@
 | model     | varchar(255) | YES  |     | NULL    |                |
 | available | varchar(255) | YES  |     | NULL    |                |
 
-2. "customer" table includes :
+##### 2. "customer" table includes :
 
 | Field   | Type         | Null | Key | Default | Extra          |
 |---------|--------------|------|-----|---------|----------------|
@@ -40,7 +40,7 @@
 | address | tinytext     | YES  |     | NULL    |                |
 | mobile  | int(13)      | YES  |     | NULL    |                |
 
-3. "rental" table includes :
+##### 3. "rental" table includes :
 
 | Field   | Type         | Null | Key | Default | Extra          |
 |---------|--------------|------|-----|---------|----------------|
@@ -51,7 +51,7 @@
 | date    | varchar(255) | YES  |     | NULL    |                |
 | due     | varchar(255) | YES  |     | NULL    |                |
 
-4. "login" table includes :
+##### 4. "login" table includes :
 
 | Field    | Type         | Null | Key | Default | Extra          |
 |----------|--------------|------|-----|---------|----------------|
@@ -59,7 +59,7 @@
 | username | varchar(255) | YES  |     | NULL    |                |
 | password | varchar(255) | YES  |     | NULL    |                |
 
-5. "returncar" table includes :
+##### 5. "returncar" table includes :
 
 | Field       | Type         | Null | Key | Default | Extra          |
 |-------------|--------------|------|-----|---------|----------------|
